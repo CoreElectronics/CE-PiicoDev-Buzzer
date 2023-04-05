@@ -48,7 +48,13 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -119,7 +125,12 @@
         0.3,
         0.4
       ],
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -339,7 +350,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "PiicoDev-Buzzer.kicad_pro",
+    "filename": "CE-PiicoDev-Ultrasonic-Rangefinder.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -370,8 +381,16 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "IC tail",
-        "nets": [],
+        "name": "ATTiny",
+        "nets": [
+          "/ADD1",
+          "/ADD2",
+          "/ADD3",
+          "/ADD4",
+          "/PWR_LED",
+          "/UPDI",
+          "Net-(R4-Pad1)"
+        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
@@ -381,7 +400,7 @@
       },
       {
         "bus_width": 12.0,
-        "clearance": 0.2,
+        "clearance": 0.19,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -390,7 +409,8 @@
         "microvia_drill": 0.1,
         "name": "Power",
         "nets": [
-          "+3V3"
+          "+3V3",
+          "GND"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
@@ -448,7 +468,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "../Documents/",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
@@ -456,7 +476,7 @@
   },
   "sheets": [
     [
-      "e14a57a6-b6a2-44b3-818b-37b86447b45e",
+      "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55",
       ""
     ]
   ],
