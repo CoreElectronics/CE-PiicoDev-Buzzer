@@ -5,7 +5,7 @@
   (paper "A4")
 
   (title_block
-    (title "PiicoDev Project Title")
+    (title "PiicoDev Buzzer")
     (date "2022-12-01")
     (rev "20")
     (company "Core Electronics")
